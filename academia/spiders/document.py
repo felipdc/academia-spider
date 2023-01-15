@@ -4,7 +4,7 @@ import json
 
 class DocumentSpider(scrapy.Spider):
     name = 'document'
-    start_urls = [f'https://www.academia.edu/{n}' for n in range(94000000, 94000001)]
+    start_urls = [f'https://www.academia.edu/{n}' for n in range(94000000, 94000100)]
 
     def parse(self, response):
       yield {
